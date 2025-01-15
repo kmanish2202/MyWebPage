@@ -5,7 +5,7 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f8f9fa;
+    background-color: #c3ddf8;
 }
 
 /* Header Styling */
@@ -33,7 +33,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #ffffff;
+    color: #b8b6b6;
     text-decoration: none;
     padding: 10px 20px;
     display: block;
@@ -51,7 +51,7 @@ section {
     padding: 30px;
     margin: 20px auto;
     max-width: 800px;
-    background: #bdbdbd;
+    background: #fff7f7;
     border: 1px solid #ddd;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
