@@ -1,16 +1,16 @@
 /* General Styling */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #333; /* Professional dark text */
+    color: #333;
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f8f9fa; /* Light background for contrast */
+    background-color: #f8f9fa;
 }
 
 /* Header Styling */
 header {
-    background: #1a2b4c; /* Deep navy blue */
+    background: #1a2b4c;
     color: #ffffff;
     padding: 20px 40px;
     text-align: center;
@@ -24,7 +24,7 @@ nav ul {
     margin: 0;
     display: flex;
     justify-content: center;
-    background: #223b5f; /* Slightly lighter navy */
+    background: #223b5f;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -41,7 +41,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background: #f4d03f; /* Gold accent on hover */
+    background: #f4d03f;
     color: #1a2b4c;
     border-radius: 5px;
 }
@@ -62,4 +62,33 @@ h2 {
     border-bottom: 2px solid #f4d03f;
     display: inline-block;
     margin-bottom: 20px;
-    padding-bottom: 5px
+    padding-bottom: 5px;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Ensures proper wrapping on smaller screens */
+}
+
+.profile-pic {
+    width: 150px; /* Set a fixed width */
+    height: 150px; /* Set a fixed height */
+    flex-shrink: 0; /* Prevent the image from shrinking */
+    border-radius: 50%;
+    border: 3px solid #f4d03f;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    object-fit: cover; /* Ensures the image maintains its proportions */
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #1a2b4c;
+    color: #ffffff;
+    margin-top: 40px;
+    font-size: 0.9em;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
