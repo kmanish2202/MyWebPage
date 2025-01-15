@@ -33,6 +33,18 @@ section {
     border: 1px solid #ddd;
     border-radius: 5px;
 }
+.about-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 2px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
 footer {
     text-align: center;
     padding: 10px;
