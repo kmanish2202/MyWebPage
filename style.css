@@ -1,94 +1,28 @@
-/* General Styling */
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #333;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    background-color: #c3ddf8;
-}
-
-/* Header Styling */
+/* Header Styling with Background Image */
 header {
-    background: #1a2b4c;
+    background: url('/images/background.JPG') no-repeat center center/cover; /* Background image settings */
     color: #ffffff;
-    padding: 20px 40px;
+    padding: 50px 20px;
     text-align: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
 }
 
-/* Navigation Styling */
-nav ul {
-    list-style: none;
-    padding: 0;
+/* Optional Overlay to Improve Text Visibility */
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    z-index: 1;
+}
+
+header h1 {
+    position: relative; /* Position text above the overlay */
+    z-index: 2;
+    font-size: 2.5em;
     margin: 0;
-    display: flex;
-    justify-content: center;
-    background: #223b5f;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-nav ul li {
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: #b8b6b6;
-    text-decoration: none;
-    padding: 10px 20px;
-    display: block;
-    transition: background 0.3s, color 0.3s;
-}
-
-nav ul li a:hover {
-    background: #f4d03f;
-    color: #1a2b4c;
-    border-radius: 5px;
-}
-
-/* Section Styling */
-section {
-    padding: 30px;
-    margin: 20px auto;
-    max-width: 800px;
-    background: #fff7f7;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
-}
-
-h2 {
-    color: #1a2b4c;
-    border-bottom: 2px solid #f4d03f;
-    display: inline-block;
-    margin-bottom: 20px;
-    padding-bottom: 5px;
-}
-
-.about-container {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    flex-wrap: wrap; /* Ensures proper wrapping on smaller screens */
-}
-
-.profile-pic {
-    width: 150px; /* Set a fixed width */
-    height: 150px; /* Set a fixed height */
-    flex-shrink: 0; /* Prevent the image from shrinking */
-    border-radius: 50%;
-    border: 3px solid #f4d03f;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    object-fit: cover; /* Ensures the image maintains its proportions */
-}
-
-/* Footer Styling */
-footer {
-    text-align: center;
-    padding: 15px;
-    background: #1a2b4c;
-    color: #ffffff;
-    margin-top: 40px;
-    font-size: 0.9em;
-    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
 }
